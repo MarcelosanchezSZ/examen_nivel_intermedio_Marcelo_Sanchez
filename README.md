@@ -31,7 +31,7 @@ print(df)
 print('\n')
 
 resultado = filter_dataframe(df, 'salario', 40000.0)
-print(resultado)
+print(resultado) ```
 
 ### Funcion 2: generar_datos_regresion(num_filas: int)
 
@@ -49,7 +49,7 @@ num_filas: DataFrame
 df_independientes, serie_dependiente = generar_datos_regresion(100)
 print(df_independientes.head())
 print('\n')
-print(serie_dependiente.head())
+print(serie_dependiente.head()) ```
 
 ## Funcion 3: train_multiple_linear_regression(df_independientes: pd.DataFrame , serie_dependiente: pd.Series)
 **Descripción**:
@@ -65,7 +65,7 @@ Entrena un modelo de regresión lineal multiple.
 **Ejemplo**:
 ```python
 modelo = train_multiple_linear_regression(df_independientes, serie_dependiente)
-print(modelo.summary())
+print(modelo.summary()) ```
 
 ### Funcion 4: flatten_list(lista: list)
 **Descripción**:
@@ -81,7 +81,7 @@ print(modelo.summary())
 ```python
 lista_listas = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 lista_unica = flatten_list(lista_listas)
-print(lista_unica)
+print(lista_unica) ```
 
 ### Funcion 5: group_and_aggregate(dataframe: pd.DataFrame, group_by: str, column_agre: str)
 **Descripción**:
@@ -107,7 +107,7 @@ print(df)
 print('\n')
 
 df_agrupado = group_and_aggregate(df, 'Categoria', 'Valor')
-print(df_agrupado)
+print(df_agrupado) ```
 
 ### Funcion 6: train_logistic_regression(df_independientes: pd.DataFrame , serie_dependiente: pd.Series)
 **Descripción**:
@@ -132,7 +132,7 @@ data = {
 df = pd.DataFrame(data)
 y = pd.Series(np.random.choice([0, 1], size=100))
 modelo = train_logistic_regression(df, y)
-print(modelo.summary())
+print(modelo.summary()) ```
 
 
 ### Funcion 7: apply_function_to_column(df: pd.DataFrame, col_name:str, funcion):
@@ -146,6 +146,7 @@ print(modelo.summary())
   funcion: funcion especifica
 
 **Retorno**:
+  return: DataFrame modificado
 
 **Ejemplo**:
 ```python
@@ -169,7 +170,7 @@ df_modificado = apply_function_to_column(df, 'Números', cuadrado)
 
 # Mostrar el DataFrame modificado
 print("\nDataFrame Modificado:")
-print(df_modificado)
+print(df_modificado) ```
 
 ### Funcion 8: filter_and_square(lista: list):
    
@@ -186,4 +187,4 @@ print(df_modificado)
 ```python
 lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 lista_filtrada = filter_and_square(lista)
-print(lista_filtrada)
+print(lista_filtrada) ```
