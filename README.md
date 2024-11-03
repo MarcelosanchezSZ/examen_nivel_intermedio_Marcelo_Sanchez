@@ -2,20 +2,20 @@
 
 ## Descripción
 
-Este proyecto contiene un conjunto de funciones diseñadas para evaluar el nivel de python
+Este proyecto contiene un conjunto de funciones diseñadas para evaluar el nivel de python, el número de funciones son ocho y se puede hacer uso de ellas descargando el archivo examen.py, las funciones se explica a continuación:
 
 ## Funciones
 
 ### Función 1: filter_dataframe(df: pd.DataFrame, col_name: str, umbral: float)
 
 **Descripción**: 
-Filtra el DataFrame para mantener solo las filas donde el valor en la columna especificada
+Filtra un DataFrame proporcionado para mantener solo las filas donde el valor en la columna especificada
     es mayor que el umbral dado.
 
 **Parámetros**:
-- df: DataFrame
-- col_name: str
-- umbral: float
+- df: Se debe proporcionar un DataFrame
+- col_name: Se debe proporcionar un str
+- umbral: Se debe proporcionar un float
 
 **Retorno**: 
 - df: DataFrame
@@ -44,7 +44,7 @@ print(resultado)
 Devuelve un DataFrame con datos sintéticos y una serie para la variable dependiente.
 
 **Parámetros**:
-num_filas: DataFrame
+num_filas: Se debe proporcionar un DataFrame
 
 **Retorno**:
 - df: DataFrame
@@ -66,8 +66,8 @@ print(serie_dependiente.head())
 Entrena un modelo de regresión lineal multiple.
 
 **Parámetros**:
-  df_independientes: DataFrame con las variables independientes.
-  serie_dependiente: Serie con la variable dependiente.
+  df_independientes: Se debe proporcionar un DataFrame con las variables independientes.
+  serie_dependiente: Se debe proporcionar una Serie con la variable dependiente.
 
 **Retorno**:
   return: Modelo de regresión lineal entrenado.
@@ -87,7 +87,7 @@ print(modelo.summary())
   Devuelve una lista unica a partir de una lista de listas.
 
 **Parámetros**:
-  lista: Lista de listas.
+  lista: Se debe proporcionar una lista de listas.
   
 **Retorno**:
   return: Lista unidimensional.
@@ -108,9 +108,9 @@ print(lista_unica)
 Agrupa un DataFrame por una columna y calcula la media de otra columna.
   
 **Parámetros**:
-  dataframe: DataFrame a procesar.
-  group_by: Nombre de la columna por la cual agrupar.
-  column_agre: Nombre de la columna a promediar.
+  dataframe: Se debe proporcionar un DataFrame a procesar.
+  group_by: Se debe proporcionar el nombre de la columna por la cual agrupar.
+  column_agre: Se debe proporcionar el nombre de la columna a promediar.
 
 **Retorno**:
   return: DataFrame con la media de la columna especificada.
@@ -138,8 +138,8 @@ print(df_agrupado)
 **Descripción**:
   Entrena un modelo de regresión logistica.
 **Parámetros**:
-  df_independientes: DataFrame con las variables independientes.
-  serie_dependiente: Serie con la variable dependiente.
+  df_independientes: Se debe proporcionar un DataFrame con las variables independientes.
+  serie_dependiente: Se debe proporcionar una Serie con la variable dependiente.
 
 **Retorno**:
   return: Modelo de regresión lineal entrenado.
@@ -169,9 +169,9 @@ print(modelo.summary())
   Aplica una función a una columna específica de un DataFrame.
 
 **Parámetros**:
-  df: DataFrame a procesar.
-  col_name: Nombre de la columna a procesar.
-  funcion: funcion especifica
+  df: Se debe proporcionar un DataFrame a procesar.
+  col_name: Se debe proporcionar el nombre de la columna a procesar.
+  funcion: Se debe proporcionar la funcion especifica
 
 **Retorno**:
   return: DataFrame modificado
@@ -209,7 +209,7 @@ print(df_modificado)
   Filtra los numeros mayores que cinco y devuelve los cuadrados de esos numeros
   
 **Parámetros**:
-  lista: Lista de numeros
+  lista: Se debe proporcionar una lista de numeros
 
 **Retorno**:
   return: Lista de numeros cuadrados
