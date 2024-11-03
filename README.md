@@ -22,6 +22,10 @@ Filtra el DataFrame para mantener solo las filas donde el valor en la columna es
 
 **Ejemplo**:
 ```python
+import pandas as pd
+import numpy as np
+from examen import filter_dataframe
+
 data = {
     'nombre': ['Marcelo', 'Ashley', 'Pedro', 'Carmen'],
     'edad': [29, 25, 22, 28],
@@ -47,10 +51,15 @@ num_filas: DataFrame
 
 **Ejemplo**:
 ```python
-df_independientes, serie_dependiente = generar_datos_regresion(100)
+import pandas as pd
+import numpy as np
+from examen import generate_datos_regresion
+
+df_independientes, serie_dependiente = generate_datos_regresion(100)
 print(df_independientes.head())
 print('\n')
-print(serie_dependiente.head()) ```
+print(serie_dependiente.head()) 
+```
 
 ## Funcion 3: train_multiple_linear_regression(df_independientes: pd.DataFrame , serie_dependiente: pd.Series)
 **Descripción**:
@@ -65,8 +74,13 @@ Entrena un modelo de regresión lineal multiple.
 
 **Ejemplo**:
 ```python
+import pandas as pd
+import numpy as np
+from examen import train_multiple_linear_regression
+
 modelo = train_multiple_linear_regression(df_independientes, serie_dependiente)
-print(modelo.summary()) ```
+print(modelo.summary()) 
+```
 
 ### Funcion 4: flatten_list(lista: list)
 **Descripción**:
@@ -80,9 +94,14 @@ print(modelo.summary()) ```
 
 **Ejemplo**:
 ```python
+import pandas as pd
+import numpy as np
+from examen import flatten_list
+
 lista_listas = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 lista_unica = flatten_list(lista_listas)
-print(lista_unica) ```
+print(lista_unica) 
+```
 
 ### Funcion 5: group_and_aggregate(dataframe: pd.DataFrame, group_by: str, column_agre: str)
 **Descripción**:
@@ -98,6 +117,10 @@ Agrupa un DataFrame por una columna y calcula la media de otra columna.
 
 **Ejemplo**:
 ```python
+import pandas as pd
+import numpy as np
+from examen import group_and_aggregate
+
 data = {
     'Categoria': ['A', 'A', 'B', 'B', 'C', 'C'],
     'Valor': [10, 20, 30, 40, 50, 60],
@@ -108,7 +131,8 @@ print(df)
 print('\n')
 
 df_agrupado = group_and_aggregate(df, 'Categoria', 'Valor')
-print(df_agrupado) ```
+print(df_agrupado) 
+```
 
 ### Funcion 6: train_logistic_regression(df_independientes: pd.DataFrame , serie_dependiente: pd.Series)
 **Descripción**:
@@ -122,6 +146,10 @@ print(df_agrupado) ```
 
 **Ejemplo**:
 ```python
+import pandas as pd
+import numpy as np
+from examen import train_logistic_regression
+
 # Crear un DataFrame de ejemplo
 np.random.seed(42)  # Para reproducibilidad
 
@@ -133,7 +161,8 @@ data = {
 df = pd.DataFrame(data)
 y = pd.Series(np.random.choice([0, 1], size=100))
 modelo = train_logistic_regression(df, y)
-print(modelo.summary()) ```
+print(modelo.summary()) 
+```
 
 
 ### Funcion 7: apply_function_to_column(df: pd.DataFrame, col_name:str, funcion):
@@ -151,6 +180,10 @@ print(modelo.summary()) ```
 
 **Ejemplo**:
 ```python
+import pandas as pd
+import numpy as np
+from examen import apply_function_to_column
+
 def cuadrado(x):
     """Devuelve el cuadrado de un número."""
     return x ** 2
@@ -171,7 +204,8 @@ df_modificado = apply_function_to_column(df, 'Números', cuadrado)
 
 # Mostrar el DataFrame modificado
 print("\nDataFrame Modificado:")
-print(df_modificado) ```
+print(df_modificado) 
+```
 
 ### Funcion 8: filter_and_square(lista: list):
    
@@ -186,6 +220,11 @@ print(df_modificado) ```
 
 **Ejemplo**:
 ```python
+import pandas as pd
+import numpy as np
+from examen import filter_and_square
+
 lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 lista_filtrada = filter_and_square(lista)
-print(lista_filtrada) ```
+print(lista_filtrada) 
+```
