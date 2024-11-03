@@ -44,7 +44,7 @@ print(resultado)
 Devuelve un DataFrame con datos sintéticos y una serie para la variable dependiente.
 
 **Parámetros**:
-num_filas: Se debe proporcionar un DataFrame
+- num_filas: Se debe proporcionar un DataFrame
 
 **Retorno**:
 - df: DataFrame
@@ -66,11 +66,11 @@ print(serie_dependiente.head())
 Entrena un modelo de regresión lineal multiple.
 
 **Parámetros**:
-  df_independientes: Se debe proporcionar un DataFrame con las variables independientes.
-  serie_dependiente: Se debe proporcionar una Serie con la variable dependiente.
+- df_independientes: Se debe proporcionar un DataFrame con las variables independientes.
+- serie_dependiente: Se debe proporcionar una Serie con la variable dependiente.
 
 **Retorno**:
-  return: Modelo de regresión lineal entrenado.
+- return: Modelo de regresión lineal entrenado.
 
 **Ejemplo**:
 ```python
@@ -87,10 +87,10 @@ print(modelo.summary())
   Devuelve una lista unica a partir de una lista de listas.
 
 **Parámetros**:
-  lista: Se debe proporcionar una lista de listas.
+- lista: Se debe proporcionar una lista de listas.
   
 **Retorno**:
-  return: Lista unidimensional.
+- return: Lista unidimensional.
 
 **Ejemplo**:
 ```python
@@ -108,12 +108,12 @@ print(lista_unica)
 Agrupa un DataFrame por una columna y calcula la media de otra columna.
   
 **Parámetros**:
-  dataframe: Se debe proporcionar un DataFrame a procesar.
-  group_by: Se debe proporcionar el nombre de la columna por la cual agrupar.
-  column_agre: Se debe proporcionar el nombre de la columna a promediar.
+- dataframe: Se debe proporcionar un DataFrame a procesar.
+- group_by: Se debe proporcionar el nombre de la columna por la cual agrupar.
+- column_agre: Se debe proporcionar el nombre de la columna a promediar.
 
 **Retorno**:
-  return: DataFrame con la media de la columna especificada.
+- return: DataFrame con la media de la columna especificada.
 
 **Ejemplo**:
 ```python
@@ -138,11 +138,11 @@ print(df_agrupado)
 **Descripción**:
   Entrena un modelo de regresión logistica.
 **Parámetros**:
-  df_independientes: Se debe proporcionar un DataFrame con las variables independientes.
-  serie_dependiente: Se debe proporcionar una Serie con la variable dependiente.
+- df_independientes: Se debe proporcionar un DataFrame con las variables independientes.
+- serie_dependiente: Se debe proporcionar una Serie con la variable dependiente.
 
 **Retorno**:
-  return: Modelo de regresión lineal entrenado.
+- return: Modelo de regresión lineal entrenado.
 
 **Ejemplo**:
 ```python
@@ -169,12 +169,12 @@ print(modelo.summary())
   Aplica una función a una columna específica de un DataFrame.
 
 **Parámetros**:
-  df: Se debe proporcionar un DataFrame a procesar.
-  col_name: Se debe proporcionar el nombre de la columna a procesar.
-  funcion: Se debe proporcionar la funcion especifica
+- df: Se debe proporcionar un DataFrame a procesar.
+- col_name: Se debe proporcionar el nombre de la columna a procesar.
+- funcion: Se debe proporcionar la funcion especifica
 
 **Retorno**:
-  return: DataFrame modificado
+- return: DataFrame modificado
 
 **Ejemplo**:
 ```python
@@ -209,10 +209,10 @@ print(df_modificado)
   Filtra los numeros mayores que cinco y devuelve los cuadrados de esos numeros
   
 **Parámetros**:
-  lista: Se debe proporcionar una lista de numeros
+- lista: Se debe proporcionar una lista de numeros
 
 **Retorno**:
-  return: Lista de numeros cuadrados
+- return: Lista de numeros cuadrados
 
 **Ejemplo**:
 ```python
