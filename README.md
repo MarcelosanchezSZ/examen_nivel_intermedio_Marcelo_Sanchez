@@ -150,12 +150,10 @@ import pandas as pd
 import numpy as np
 from examen import train_logistic_regression
 
-# Crear un DataFrame de ejemplo
-np.random.seed(42)  # Para reproducibilidad
-
+np.random.seed(42)  
 data = {
-    'Edad': np.random.randint(18, 70, size=100),  # Edad aleatoria entre 18 y 70
-    'Ingreso': np.random.randint(20000, 100000, size=100),  # Ingreso aleatorio
+    'Edad': np.random.randint(18, 70, size=100),  
+    'Ingreso': np.random.randint(20000, 100000, size=100),  
 }
 
 df = pd.DataFrame(data)
@@ -188,14 +186,12 @@ def cuadrado(x):
     """Devuelve el cuadrado de un número."""
     return x ** 2
 
-# Crear un DataFrame de ejemplo
 data = {
     'Números': [1, 2, 3, 4, 5],
     'Otras_columnas': ['a', 'b', 'c', 'd', 'e']
 }
 df = pd.DataFrame(data)
 
-# Mostrar el DataFrame original
 print("DataFrame Original:")
 print(df)
 
