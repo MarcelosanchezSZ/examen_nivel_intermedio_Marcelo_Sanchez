@@ -21,17 +21,15 @@ Filtra el DataFrame para mantener solo las filas donde el valor en la columna es
 - df: DataFrame
 
 **Ejemplo**:
-# Ejemplo de uso
+```python
 data = {
     'nombre': ['Marcelo', 'Ashley', 'Pedro', 'Carmen'],
     'edad': [29, 25, 22, 28],
-    'salario': [35250.80, 67834.0, 387362.0, 76254.0]
-}
+    'salario': [35250.80, 67834.0, 387362.0, 76254.0]}
 df = pd.DataFrame(data)
 print(df)
 print('\n')
 
-# Usar la función
 resultado = filter_dataframe(df, 'salario', 40000.0)
 print(resultado)
 
@@ -47,13 +45,13 @@ num_filas: DataFrame
 - df: DataFrame
 
 **Ejemplo**:
-# Ejemplo de uso
+```python
 df_independientes, serie_dependiente = generar_datos_regresion(100)
 print(df_independientes.head())
 print('\n')
 print(serie_dependiente.head())
 
-### Funcion 3: train_multiple_linear_regression(df_independientes: pd.DataFrame , serie_dependiente: pd.Series)
+## Funcion 3: train_multiple_linear_regression(df_independientes: pd.DataFrame , serie_dependiente: pd.Series)
 **Descripción**:
 Entrena un modelo de regresión lineal multiple.
 
@@ -65,6 +63,7 @@ Entrena un modelo de regresión lineal multiple.
   return: Modelo de regresión lineal entrenado.
 
 **Ejemplo**:
+```python
 modelo = train_multiple_linear_regression(df_independientes, serie_dependiente)
 print(modelo.summary())
 
@@ -79,6 +78,7 @@ print(modelo.summary())
   return: Lista unidimensional.
 
 **Ejemplo**:
+```python
 lista_listas = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 lista_unica = flatten_list(lista_listas)
 print(lista_unica)
@@ -96,6 +96,7 @@ Agrupa un DataFrame por una columna y calcula la media de otra columna.
   return: DataFrame con la media de la columna especificada.
 
 **Ejemplo**:
+```python
 data = {
     'Categoria': ['A', 'A', 'B', 'B', 'C', 'C'],
     'Valor': [10, 20, 30, 40, 50, 60],
@@ -119,6 +120,7 @@ print(df_agrupado)
   return: Modelo de regresión lineal entrenado.
 
 **Ejemplo**:
+```python
 # Crear un DataFrame de ejemplo
 np.random.seed(42)  # Para reproducibilidad
 
@@ -146,6 +148,7 @@ print(modelo.summary())
 **Retorno**:
 
 **Ejemplo**:
+```python
 def cuadrado(x):
     """Devuelve el cuadrado de un número."""
     return x ** 2
@@ -180,6 +183,7 @@ print(df_modificado)
   return: Lista de numeros cuadrados
 
 **Ejemplo**:
+```python
 lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 lista_filtrada = filter_and_square(lista)
 print(lista_filtrada)
