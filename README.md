@@ -163,7 +163,7 @@ print(modelo.summary())
 ```
 
 
-### Funcion 7: apply_function_to_column(df: pd.DataFrame, col_name:str, funcion):
+### Funcion 7: apply_function_to_column(df: pd.DataFrame, col_name:str, funcion)
 
 **Descripción**:
   Aplica una función a una columna específica de un DataFrame.
@@ -203,7 +203,7 @@ print("\nDataFrame Modificado:")
 print(df_modificado) 
 ```
 
-### Funcion 8: filter_and_square(lista: list):
+### Funcion 8: filter_and_square(lista: list)
    
 **Descripción**:
   Filtra los numeros mayores que cinco y devuelve los cuadrados de esos numeros
