@@ -31,7 +31,8 @@ print(df)
 print('\n')
 
 resultado = filter_dataframe(df, 'salario', 40000.0)
-print(resultado) python```
+print(resultado) 
+```
 
 ### Funcion 2: generar_datos_regresion(num_filas: int)
 
